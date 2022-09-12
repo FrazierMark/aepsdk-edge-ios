@@ -33,6 +33,7 @@ end
 
 # for extension development, include AEPCore, AEPEdge and their dependencies
 target 'YOUR_TARGET_NAME' do
+
   	pod 'AEPEdge'
   	pod 'AEPCore'
 end
@@ -48,7 +49,10 @@ $ pod install
 
 To add the AEPEdge Package to your application, from the Xcode menu select:
 
-`File > Swift Packages > Add Package Dependency...`
+`File > Add Packages...`
+
+> **Note** 
+>  The menu options may vary depending on the version of Xcode being used.
 
 Enter the URL for the AEPEdge package repository: `https://github.com/adobe/aepsdk-edge-ios.git`.
 
@@ -120,7 +124,7 @@ make setup-tools
 
 | Project                                                      | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [AEPCore Extensions](https://github.com/FrazierMark/aepsdk-core-ios) | The AEPCore and AEPServices represent the foundation of the Adobe Experience Platform SDK. |
+| [AEPCore Extensions](https://github.com/adobe/aepsdk-core-ios) | The AEPCore and AEPServices represent the foundation of the Adobe Experience Platform SDK. |
 | [AEPEdgeIdentity Extension](https://github.com/adobe/aepsdk-edgeidentity-ios) | The AEPEdgeIdentity extension enables handling of user identity data from a mobile app when using AEP SDK and the AEP Edge Network extension. |
 | [AEP SDK Sample App for iOS](https://github.com/adobe/aepsdk-sample-app-ios) | Contains iOS sample apps for the AEP SDK. Apps are provided for both Objective-C and Swift implementations. |
 | [AEP SDK Sample App for Android](https://github.com/adobe/aepsdk-sample-app-android) | Contains Android sample app for the AEP SDK.                 |
